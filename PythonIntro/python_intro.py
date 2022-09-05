@@ -7,12 +7,8 @@ Vin Howe
 
 
 # Problem 1 (write code below)
-
 if __name__ == "__main__":
-    # print("Hello, world!")
-    # print(sphere_volume(2))
-    pass
-
+    print("Hello, world!")
 
 # Problem 2
 def sphere_volume(r):
