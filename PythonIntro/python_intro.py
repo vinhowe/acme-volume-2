@@ -127,17 +127,3 @@ def alt_harmonic(n):
     harmonic series, which approximates ln(2).
     """
     return sum(((-1)**(i + 1)) / i for i in range(1, n))
-
-
-if __name__ == "__main__":
-    # print(sphere_volume(2))
-    # isolate(1, 2, 3, 4, 5)
-    # print(first_half("python"))
-    # print(first_half("ipython"))
-    # print(backward("python"))
-    # print(backward("ipython"))
-    # list_ops()
-    # pig_latin("apple")
-    # pig_latin("banana")
-    # print(palindrome())
-    # print(alt_harmonic(500000))
