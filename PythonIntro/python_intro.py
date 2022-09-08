@@ -71,19 +71,13 @@ def list_ops():
         ['fox', 'hawk', 'dog', 'bearhunter']
     """
     items = ["bear", "ant", "cat", "dog"]
-    print(items)
     items.append("eagle")
-    print(items)
     items[2] = "fox"
-    print(items)
     items.pop(1)
-    print(items)
     items.sort(reverse=True)
-    print(items)
     items[items.index("eagle")] = "hawk"
-    print(items)
     items[-1] += "hunter"
-    print(items)
+    return items
 
 
 # Problem 6
@@ -97,9 +91,9 @@ def pig_latin(word):
         'ananabay'
     """
     if word[0] in "aeiou":
-        print(f"{word}hay")
+        return f"{word}hay"
     else:
-        print(f"{word[1:]}{word[0]}ay")
+        return f"{word[1:]}{word[0]}ay"
 
 
 # Problem 7
@@ -128,4 +122,4 @@ def alt_harmonic(n):
     """Return the partial sum of the first n terms of the alternating
     harmonic series, which approximates ln(2).
     """
-    return sum(((-1) ** (i + 1)) / i for i in range(1, n))
+    return sum(((-1) ** (i + 1)) / i for i in range(1, n + 1))
